@@ -1,0 +1,19 @@
+GET http://localhost:3001/posts
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3V5YXNoIiwiaWF0IjoxNjgwMDY3MjI0LCJleHAiOjE2ODAwNjcyODR9.6RA1aKoj2MkUNf1z2UKytVg7Uw9mbtLXH13hIg4FWPs
+###
+
+POST http://localhost:3002/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3V5YXNoIiwiaWF0IjoxNjgwMDY3MTYyfQ.yg9xvk0AmUqO0r8Bj6hK3RNp-Al5PNt9y-H4F95UedU"
+}
+
+###
+
+POST http://localhost:3002/login
+Content-Type : application/json
+
+{
+    "username" : "Suyash"
+}
